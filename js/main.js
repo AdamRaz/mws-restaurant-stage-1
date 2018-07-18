@@ -4,6 +4,16 @@ let restaurants,
 var newMap
 var markers = []
 
+console.log(`navigator.serviceWorker: ${navigator.serviceWorker}`);
+
+navigator.serviceWorker.register('./udacity-review-sw.js').then(function(reg) {
+  console.log('Yay!');
+  console.log('Registration succeeded. Scope is ' + reg.scope);
+  // see - https://stackoverflow.com/questions/35780397/understanding-service-worker-scope
+}).catch(function(err) {
+  console.log('Boo!');
+});
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
