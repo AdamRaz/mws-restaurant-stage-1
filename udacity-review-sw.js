@@ -8,6 +8,11 @@ self.addEventListener('install', function(event) {
             return cache.addAll([
                 // could just reference an array declared elsewhere
                 '/js/main.js',
+                '/js/restaurant_info.js',
+                '/js/dbhelper.js',
+                '/udacity-review-sw.js',
+                '/index.html',
+                '/restaurant.html',
                 '/css/styles.css',
                 '/img/1.jpg',
                 '/img/2.jpg',
@@ -15,11 +20,14 @@ self.addEventListener('install', function(event) {
                 '/img/4.jpg',
                 '/img/5.jpg',
                 '/img/6.jpg',
-
-                // 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
-                // '//normalize-css.googlecode.com/svn/trunk/normalize.css',
-                // 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
-                // 'data/restaurants.json'
+                '/img/7.jpg',
+                '/img/8.jpg',
+                '/img/9.jpg',
+                '/img/10.jpg',
+                'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
+                // '//normalize-css.googlecode.com/svn/trunk/normalize.css', // generates authentication error
+                'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
+                '/data/restaurants.json'
 
             ]);
         }).catch(function(error) {
@@ -43,7 +51,7 @@ self.addEventListener('fetch', function(event) {
         caches.match(event.request).then(function(response) {
             console.log('Responding to Fetch Event!');
             // console.log(`event.request: ${event.request}`);
-            // console.log(`response: ${response}`);
+            console.log(`response: ${response}`);
 
             if (response) return response;
             // if exists in cache, return that, else return original fetch and request
