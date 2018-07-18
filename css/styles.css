@@ -226,7 +226,7 @@ nav h1 a {
 	width: 90%;
 }
 #restaurant-address {
-  font-size: calc(12px + 0.1vw);;
+  font-size: calc(14px + 0.2vw);;
   margin: 10px 0px;
 }
 #restaurant-cuisine {
@@ -278,5 +278,5 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
-  font-size: calc(26px + 0.2vw);
+  font-size: calc(24px + 0.1vw);
 }
