@@ -1,7 +1,7 @@
 let restaurants,
   neighborhoods,
   cuisines
-let newMap
+var newMap //using let creates: `Uncaught TypeError: Cannot read property 'addLayer' of undefined"`
 let markers = []
 
 console.log(`navigator.serviceWorker: ${navigator.serviceWorker}`);
