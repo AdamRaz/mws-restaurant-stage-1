@@ -144,11 +144,12 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 10%;
+  margin: 10% auto;
   min-height: 380px;
   padding: 0 5% 25px;
   text-align: left;
-  width: 70%;
+  width: 50%;
+  /* try flexbox but with margins set to minimal values */
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
