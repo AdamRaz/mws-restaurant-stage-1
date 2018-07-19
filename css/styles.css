@@ -137,7 +137,8 @@ nav h1 a {
   letter-spacing: 0;
   margin: 10px;
   padding: 0 10px;
-  width: 360px;
+  min-width: 200px;
+  width: 30%;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -154,7 +155,7 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 5vh auto;
+  margin: 3vh auto;
   min-height: 380px;
   padding: 0 5% 25px;
   text-align: left;
@@ -294,7 +295,28 @@ nav h1 a {
 
 @media screen and (min-device-width: 700px) {
   #restaurants-list li {
+    min-width: 320px;
     width: 30%;
+    padding: 30px;
+    /* try flexbox but with margins set to minimal values */
+  }
+}
+
+
+@media screen and (min-device-width: 1600px) {
+  #restaurants-list li {
+    min-width: 320px;
+    width: 25%;
+    margin: 3vh 10px;
+    /* try flexbox but with margins set to minimal values */
+  }
+}
+
+@media screen and (min-device-width: 2000px) {
+  #restaurants-list li {
+    min-width: 320px;
+    width: 20%;
+    margin: 3vh 10px;
     /* try flexbox but with margins set to minimal values */
   }
 }
