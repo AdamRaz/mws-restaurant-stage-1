@@ -106,6 +106,14 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+
+#map:focus {
+  outline: 4px dotted #07F;
+}
+
+#map-container:focus {
+  outline: 1px solid #F66;
+}
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
