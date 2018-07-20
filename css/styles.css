@@ -42,9 +42,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #footer {
   background-color: #444;
   color: #aaa;
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 15px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -70,12 +70,12 @@ nav h1 a {
   /* height: 20px; */
 }
 #breadcrumb {
-    padding: 10px 40px 10px;
+    padding: 10px 0px 10px 45px;
     list-style: none;
     background-color: #eee;
-    font-size: calc(28px + 0.2vw);;
+    font-size: calc(16px + 0.2vw);;
     margin: 0;
-    width: 50%;
+    width: 60%;
 }
 
 /* Display list items side by side */
@@ -103,6 +103,7 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
+  min-height: 240px;
   height: 55vh;
   width: 100%;
   background-color: #ccc;
@@ -207,7 +208,8 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 40vh;
+  min-height: 240px;
+  height: 55vh;
   margin-top: 6vh;
   /* position: fixed; */
   right: 0;
@@ -257,7 +259,7 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 10% 30px;
+  padding: 30px 10% 30px;
   width: 80%;
 }
 #reviews-container {
@@ -291,7 +293,7 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
-  font-size: calc(24px + 0.1vw);
+  font-size: calc(14px + 0.2vw);
 }
 
 @media screen and (min-device-width: 700px) {
