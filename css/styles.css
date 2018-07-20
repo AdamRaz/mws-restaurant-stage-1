@@ -58,14 +58,14 @@ nav {
 }
 nav h1 {
   /* padding: calc(40px - (14px + 0.1vw)); */ 
-  /* padding: 10px; */
+  padding: 2px;
 }
 nav h1 a {
   color: #fff;
   /* font-size: calc(18px + 0.3vw); */
-  font-size: 2vh;
-  font-weight: 400;
-  letter-spacing: 10px;
+  font-size: calc(10px + 1.25vh + 0.25vw);
+  font-weight: 200;
+  letter-spacing: calc(5px + 0.25vw);
   text-transform: uppercase;
   /* height: 20px; */
 }
