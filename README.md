@@ -30,5 +30,7 @@ In a terminal, check the version of Python you have: `python -V`. If you have Py
 app screens:
 
 ![image of restaurant reviews app screen](./readme-img-1.PNG "restaurant reviews app screen")
+
 ![image of restaurant reviews app screen](./readme-img-2.PNG "restaurant reviews app screen")
+
 ![image of restaurant reviews app screen](./readme-img-3.PNG "restaurant reviews app screen")
